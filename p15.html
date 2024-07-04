@@ -1,0 +1,35 @@
+<!--
+A dropdown box measure, element length,weight,volume,temprature
+next quantity
+again a dropdown box for sourceunit contains element of length
+again a dropdown box for targetunit contains element of length
+button to show result thet convert the quantity from sourceunit to targetunit
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P 15</title>
+</head>
+<link rel="stylesheet" href="p15.css">
+
+<body>
+    <div class="bigbox">
+        <h1>Unit Converter</h1>
+        <label for="measure">Measure:</label>
+        <select id="measure"></select>
+        <label for="quantity">Quantity:</label>
+        <input type="number" placeholder="Enter the quantity" id="quantity">
+        <label for="s_unit">Source Unit:</label>
+        <select id="s_unit"></select>
+        <label for="t_unit">Target Unit:</label>
+        <select id="t_unit"></select>
+        <button onclick="ConvertUnits()">Convert</button>
+        <div id="result"></div>
+    </div>
+</body>
+<script src="p15.js"></script>
+
+</html>
